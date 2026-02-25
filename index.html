@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EFC Clinic - Sosyal Medya Strateji Raporu</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f8f9fa;color:#333;line-height:1.6;padding:20px}
+.container{max-width:1000px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 5px 30px rgba(0,0,0,.15);overflow:hidden}
+.header{background:linear-gradient(135deg,#1e3c72,#2a5298);color:#fff;padding:40px 30px;text-align:center}
+.header h1{font-size:2.2em;margin-bottom:10px;text-shadow:2px 2px 4px rgba(0,0,0,.3)}
+.header .subtitle{font-size:1.1em;opacity:.95;font-weight:500}
+.section{padding:25px 30px;border-bottom:1px solid #eee}
+.section:last-child{border-bottom:none}
+.section-title{color:#2a5298;font-size:1.4em;margin-bottom:15px;padding-bottom:10px;border-bottom:2px solid #667eea;font-weight:600}
+.content-box{background:#fff;border-left:4px solid #667eea;padding:15px 20px;margin:15px 0;border-radius:0 8px 8px 0}
+.content-box.warning{border-left-color:#ffc107;background:#fffbeb}
+.content-box.success{border-left-color:#28a745;background:#f0fff4}
+.content-box.danger{border-left-color:#dc3545;background:#fff5f5}
+.content-box.info{border-left-color:#17a2b8;background:#f0faff}
+h3{color:#2a5298;font-size:1.15em;margin:15px 0 10px;font-weight:600}
+p{margin:8px 0;color:#444}
+ul,ol{margin:10px 0 10px 25px;color:#444}
+li{margin:5px 0}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin:15px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:15px 0}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:15px 0}
+.card{background:#f8f9fa;padding:15px;border-radius:8px;border:1px solid #e0e0e0}
+.card h4{color:#2a5298;margin-bottom:8px;font-size:1em}
+.card p,.card li{font-size:.9em}
+.table{width:100%;border-collapse:collapse;margin:15px 0;border-radius:8px;overflow:hidden}
+.table th{background:#667eea;color:#fff;padding:12px;text-align:left;font-weight:600;font-size:.95em}
+.table td{padding:10px 12px;border-bottom:1px solid #eee;font-size:.9em}
+.table tr:hover{background:#f8f9fa}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.8em;font-weight:600;margin:2px}
+.badge.ig{background:#E1306C;color:#fff}
+.badge.yt{background:#FF0000;color:#fff}
+.badge.li{background:#0077B5;color:#fff}
+.badge.new{background:#28a745;color:#fff}
+.timeline{position:relative;padding-left:25px;margin:15px 0}
+.timeline::before{content:'';position:absolute;left:8px;top:5px;bottom:5px;width:2px;background:#667eea}
+.timeline-item{position:relative;margin-bottom:20px;padding-left:15px}
+.timeline-item::before{content:'';position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:#667eea;border:2px solid #fff;box-shadow:0 0 0 2px #667eea}
+.highlight{background:linear-gradient(135deg,#fff9e6,#ffecb3);padding:15px;border-radius:8px;margin:15px 0;border-left:4px solid #ffc107}
+.video-box{background:linear-gradient(135deg,#1e3c72,#2a5298);color:#e0e0e0;padding:25px;border-radius:12px;margin:20px 0;text-align:center;box-shadow:0 6px 25px rgba(30,60,114,.3)}
+.video-box h3{margin-bottom:15px;font-size:1.3em;font-weight:700;text-shadow:1px 1px 3px rgba(0,0,0,.4)}
+.video-box h3 span{color:#d0d0d0;font-weight:700}
+.video-box video{width:100%;max-width:640px;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,.4);background:#000;border:2px solid rgba(255,255,255,.2)}
+.video-box .video-note{margin-top:15px;font-size:.95em;background:rgba(255,255,255,.15);padding:12px 15px;border-radius:8px;display:inline-block}
+.video-box .video-note span{margin:0 8px;font-weight:600;color:#e8e8e8}
+.footer{background:#f5f5f5;color:#333;text-align:center;padding:25px;border-top:3px solid #667eea}
+.footer strong{color:#667eea;font-size:1.1em}
+.footer a{color:#667eea;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.btn{position:fixed;bottom:25px;right:25px;background:linear-gradient(135deg,#11998e,#38ef7d);color:#fff;padding:14px 28px;border:none;border-radius:40px;font-weight:700;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.25);z-index:1000;font-size:1em;transition:all .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 25px rgba(0,0,0,.3)}
+@media print{.btn{display:none}body{background:#fff;padding:0}.container{box-shadow:none;border-radius:0}}
+@media(max-width:768px){.header h1{font-size:1.6em}.section{padding:20px}.grid-2,.grid-3,.grid-5{grid-template-columns:1fr}.table{font-size:.85em}th,td{padding:8px}.video-box video{max-width:100%}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🏥 EFC CLINIC</h1>
+<div class="subtitle">🚀 Sıfırdan Başarıya: 30 Günlük Yol Haritası</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">📊 MEVCUT DURUM</h2>
+<div class="content-box info">
+<p><strong>Hesaplar yeni açıldı. Takipçi yok. İçerik yok.</strong></p>
+<p>Bu bir dezavantaj değil. Temiz bir sayfa.</p>
+<p>Doğru kurallarla başlanıyor. Yanlış alışkanlık edinilmiyor.</p>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">🎯 İLK 30 GÜN HEDEFLERİ</h2>
+<div class="highlight">Gerçekçi olunması gerekiyor. Hızlı sonuç beklenmemeli.</div>
+<div class="grid-3">
+<div class="card"><h4>📈 Toplam Erişim</h4><p>5.000-10.000</p></div>
+<div class="card"><h4>📱 Instagram Takipçi</h4><p>100-150</p></div>
+<div class="card"><h4>▶️ YouTube Abone</h4><p>30-50</p></div>
+<div class="card"><h4>💼 LinkedIn Bağlantı</h4><p>50-80</p></div>
+<div class="card"><h4>🎯 Nitelikli Lead</h4><p>5-8</p></div>
+<div class="card"><h4>✅ Randevu Dönüşümü</h4><p>2-4</p></div>
+</div>
+<div class="content-box" style="margin-top:15px">
+<p><strong>CPL Hedefi:</strong> ₺300-500 <span class="badge new">İlk ay yüksek normal</span></p>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">📱 PLATFORM STRATEJİSİ</h2>
+<div class="grid-3">
+<div class="card">
+<h4><span class="badge ig">Instagram</span> %60 Odak</h4>
+<ul>
+<li>Reels ağırlıklı içerik üretimi</li>
+<li>Story ile günlük etkileşim</li>
+<li>Profil biyografisinin net olması</li>
+<li>Linktree kullanımı</li>
+<li class="danger">⚠️ Öncesi-sonrası fotoğrafı paylaşılmıyor</li>
+</ul>
+</div>
+<div class="card">
+<h4><span class="badge yt">YouTube</span> %30 Odak</h4>
+<ul>
+<li>8-12 dk bilgilendirici videolar</li>
+<li>Başlık/açıklama SEO uyumlu</li>
+<li>Thumbnail profesyonel görünüyor</li>
+<li>Video sonuna CTA + WhatsApp linki</li>
+</ul>
+</div>
+<div class="card">
+<h4><span class="badge li">LinkedIn</span> %10 Odak</h4>
+<ul>
+<li>Profesyonel uzmanlık içerikleri</li>
+<li>Klinik kültürü ve ekip tanıtımı</li>
+<li>Sektörel makale paylaşımı</li>
+<li>B2B iş birlikleri için alan</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">⚖️ YASAL UYUM VE İÇERİK KURALLARI</h2>
+<div class="content-box danger">
+<h3>🔒 Tıbbi Reklam Yönetmeliği Kuralları</h3>
+<ul>
+<li>❌ Öncesi-sonrası görseli yasak • İzinsiz paylaşım ceza getiriyor</li>
+<li>❌ Fiyat bilgisi paylaşılmıyor</li>
+<li>❌ "Garanti", "kesin sonuç" gibi ifadeler kullanılmıyor</li>
+<li>❌ Hasta testimonialı için yazılı onay şart • Yüz gizlemek yetmiyor</li>
+<li>✅ İçerikte "tanıtım" değil "bilgilendirme" odaklı olunması</li>
+</ul>
+</div>
+<div class="content-box success">
+<h3>✅ Güvenli İçerik Türleri</h3>
+<ul>
+<li>🎓 Eğitici videolar: "Saç ekimi sonrası bakım nasıl yapılıyor?"</li>
+<li>👨‍⚕️ Uzman görüşü: Doktor kısa açıklamaları</li>
+<li>🏥 Süreç anlatımı: "Klinikte bir gün" (hasta yüzü olmadan)</li>
+<li>❓ Sık sorulan sorular: Carousel formatında</li>
+<li>✨ Klinik kültürü: Ekip, teknoloji, hijyen vurgusu</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">📅 30 GÜNLÜK UYGULAMA PLANI</h2>
+<div class="timeline">
+<div class="timeline-item">
+<strong>Hafta 1: Temel Atma</strong>
+<ul>
+<li>Profil optimizasyonu (biyografi, link, görsel kimlik)</li>
+<li>3 Reels: Klinik tanıtım, uzman tanıtım, hizmet özeti</li>
+<li>2 YouTube: "Estetikte etik", "İlk konsültasyon süreci"</li>
+<li>1 LinkedIn: Uzman kadrosu ve yaklaşım</li>
+<li>Google İşletme Profili kurulumu ve doğrulama</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>Hafta 2: İçerik Ritmi</strong>
+<ul>
+<li>2 Reels: Bilgilendirici içerik (bakım ipuçları)</li>
+<li>1 YouTube: "Sık sorulan 10 soru"</li>
+<li>1 Blog yazısı: Web sitesine SEO uyumlu içerik</li>
+<li>Story serisi: Soru-cevap, anket</li>
+<li>Rakip analizi: 1 saat ayrılıyor. Notlar alınıyor.</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>Hafta 3: Etkileşim Artırma</strong>
+<ul>
+<li>2 Reels: Uzman röportajı (30 sn)</li>
+<li>1 YouTube: Hasta deneyimi (sesli, yüz gizli, izinli)</li>
+<li>LinkedIn: Sektörel yorum içeren post</li>
+<li>Canlı yayın denemesi: 15 dk Q&A</li>
+<li>Lead takibi: Gelen DM'ler 2 saat içinde yanıtlanıyor</li>
+</ul>
+</div>
+<div class="timeline-item">
+<strong>Hafta 4: Dönüşüm Odaklı Adım</strong>
+<ul>
+<li>2 Reels: CTA içeren içerik ("Detaylı bilgi için linkte")</li>
+<li>1 YouTube: "Ameliyat öncesi hazırlık rehberi"</li>
+<li>Mini reklam testi: ₺1.500-2.000 bütçe, Instagram Reels</li>
+<li>Dönüşüm takibi: UTM kodları ile kaynak analizi</li>
+<li>Aylık rapor: Hangi içerik çalıştı? Neden?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">⚙️ HAFTALIK ÇALIŞMA AKIŞI</h2>
+<table class="table">
+<thead><tr><th>Gün</th><th>Yapılacak İşler</th></tr></thead>
+<tbody>
+<tr><td><strong>Pazartesi</strong></td><td>1 YouTube videosu çekimi (arka plan hazırlığı ile)<br><small>Çekim listesi önceden hazırlanıyor</small></td></tr>
+<tr><td><strong>Salı</strong></td><td>Video kurgu (CapCut) • Thumbnail tasarımı (Canva)<br>YouTube upload + SEO ayarları</td></tr>
+<tr><td><strong>Çarşamba</strong></td><td>2 Reels çekimi ve kurgusu • Story içerikleri hazırlığı<br>DM ve yorum yanıtları</td></tr>
+<tr><td><strong>Perşembe</strong></td><td>LinkedIn post hazırlığı • Blog yazısı (YouTube'dan uyarlanıyor)<br>İçerik onayı için uzmana gönderiliyor</td></tr>
+<tr><td><strong>Cuma</strong></td><td>Haftalık analiz (Meta Suite, YT Studio)<br>Gelecek hafta planı • Yedek içerik üretimi</td></tr>
+<tr><td><strong>Cumartesi</strong></td><td>Opsiyonel: Ekstra içerik veya dinlenme</td></tr>
+<tr><td><strong>Pazar</strong></td><td>Opsiyonel: Ekstra içerik veya dinlenme</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="section">
+<h2 class="section-title">🛠️ ARAÇLAR VE BÜTÇE</h2>
+<div class="grid-2">
+<div class="content-box success">
+<h3>✅ Ücretsiz Araçlar</h3>
+<ul>
+<li>🎨 Canva: Görsel tasarım</li>
+<li>✂️ CapCut: Video kurgu</li>
+<li>📊 Meta Business Suite: Planlama ve analiz</li>
+<li>📈 Google Analytics: Web trafiği takibi</li>
+<li>🔍 Ubersuggest: Basit SEO analizi</li>
+</ul>
+</div>
+<div class="content-box warning">
+<h3>💰 Ek Bütçe Gerekenler (Aylık)</h3>
+<ul>
+<li>🎵 Epidemic Sound: ₺150-200 (telifsiz müzik)</li>
+<li>📅 Later/Buffer: ₺0-300 (planlama, ücretsiz plan yeterli)</li>
+<li>📢 Reklam bütçesi: ₺1.500-2.000 (4. hafta testi için)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">🔄 HASTA DÖNÜŞÜM SÜRECİ</h2>
+<div class="timeline">
+<div class="timeline-item"><strong>Adım 1: Farkındalık</strong><br>Reels ve YouTube ile ulaşım • İçerik eğitici ve güven verici</div>
+<div class="timeline-item"><strong>Adım 2: İlgi</strong><br>Profil ziyareti ve biyografi tıklaması • Linktree üzerinden WhatsApp yönlendirmesi</div>
+<div class="timeline-item"><strong>Adım 3: Eylem</strong><br>WhatsApp mesajı veya form doldurma • Ön büro yanıtı: 2 saat içinde, profesyonel dil</div>
+<div class="timeline-item"><strong>Adım 4: Randevu</strong><br>Online veya telefon ile randevu onayı • Ön bilgilendirme dokümanı gönderimi</div>
+<div class="timeline-item"><strong>Adım 5: Takip</strong><br>
+<small>• Gün 1: Teşekkür mesajı<br>• Gün 3: Ekstra bilgi paylaşımı<br>• Gün 7: Son hatırlatma</small>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">⚠️ RİSK YÖNETİMİ</h2>
+<div class="grid-2">
+<div class="content-box danger">
+<h3>🔒 Yasal Risk</h3>
+<ul>
+<li>İçerik yayını öncesi uzman onayı alınıyor</li>
+<li>Hasta izni olmadan görsel kullanılmıyor</li>
+<li>Fiyat ve garanti ifadesinden kaçınılıyor</li>
+</ul>
+</div>
+<div class="content-box warning">
+<h3>🏥 Operasyonel Risk</h3>
+<ul>
+<li>Tek kişi hastalanırsa plan duruyor</li>
+<li><strong>Çözüm:</strong> 5 adet yedek Reels ve 3 blog taslağı hazır bulunduruluyor</li>
+</ul>
+</div>
+<div class="content-box info">
+<h3>💬 İtibar Riski</h3>
+<ul>
+<li>Negatif yorum şablonu: "Teşekkür ederiz. Detayları özel mesajdan konuşalım."</li>
+<li>Tartışmaya girilmiyor. Profesyonel kalınıyor.</li>
+</ul>
+</div>
+<div class="content-box success">
+<h3>🔐 Teknik Risk</h3>
+<ul>
+<li>Hesap hacklenebilir → İki faktörlü doğrulama açılıyor</li>
+<li>Yedek e-posta ve telefon numarası ekleniyor</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">📊 ÖLÇÜMLEME VE RAPORLAMA</h2>
+<div class="grid-2">
+<div class="content-box">
+<h3>📈 Haftalık Takip Edilecek Metrikler</h3>
+<ul>
+<li>Erişim ve görüntülenme</li>
+<li>Profil ziyareti ve link tıklaması</li>
+<li>DM ve WhatsApp mesaj sayısı</li>
+<li>Video izlenme oranı (ortalama %30 hedef)</li>
+<li>Lead kalitesi (randevuya dönüşen oran)</li>
+</ul>
+</div>
+<div class="content-box">
+<h3>📋 Aylık Rapor Şablonu</h3>
+<ul>
+<li>Hangi içerik en çok etkileşim aldı?</li>
+<li>Hangi platformdan daha çok lead geldi?</li>
+<li>CPL (Lead başı maliyet) ne oldu?</li>
+<li>Önümüzdeki ay ne değiştiriliyor?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">🎯 BAŞARI İÇİN KRİTİK NOKTALAR</h2>
+<div class="grid-5">
+<div class="card" style="border-left:4px solid #667eea;text-align:center"><h4>🔄 Tutarlılık</h4><p>Haftada 3-4 içerik ile düzenli devam edilmesi</p></div>
+<div class="card" style="border-left:4px solid #28a745;text-align:center"><h4>⭐ Kalite</h4><p>Az içerik, yüksek kalite daha iyi sonuç veriyor</p></div>
+<div class="card" style="border-left:4px solid #17a2b8;text-align:center"><h4>🔐 Güven</h4><p>Tıbbi içerikte doğruluk ve şeffaflık şart</p></div>
+<div class="card" style="border-left:4px solid #ffc107;text-align:center"><h4>⚡ Hız</h4><p>Gelen mesajlara 2 saat içinde yanıt verilmesi</p></div>
+<div class="card" style="border-left:4px solid #dc3545;text-align:center"><h4>🔄 Esneklik</h4><p>Çalışmayan içerik hızlıca değiştiriliyor</p></div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">🏁 SONUÇ</h2>
+<div class="content-box success">
+<p><strong>Bu plan uygulanabilir. Gerçekçi. Sürdürülebilir.</strong></p>
+<p>🎯 İlk ay odak noktası büyüme değil, <strong>temel atma</strong>.</p>
+<p>📊 5-8 nitelikli lead <strong>başarı</strong>.</p>
+<p>✅ 2-4 randevu dönüşümü hedefleniyor.</p>
+<p>⚖️ <strong>Kalite ve yasal uyum her şeyden önce geliyor.</strong></p>
+<hr style="margin:15px 0;border:none;border-top:1px solid #e0e0e0">
+<p style="font-size:1.1em;font-weight:600;color:#2a5298">
+🚀 İlk adım bugün atılıyor. Profil optimizasyonu ile başlanıyor.<br>
+Tutarlı olunması gerekiyor. Sabırlı olunması gerekiyor. Sonuç gelecek.
+</p>
+</div>
+</div>
+
+<!-- 🎬 BONUS VİDEO BÖLÜMÜ -->
+<div class="section">
+<div class="video-box">
+<h3><span>🎁 Bonus Video : Tanıtım Filmi İlk Sahne Hazır...</span></h3>
+<video controls preload="metadata">
+<source src="https://imagine-public.x.ai/imagine-public/share-videos/b2291680-f27b-4715-8caa-5e1e42202d8c.mp4?cache=1" type="video/mp4">
+Tarayıcınız video etiketini desteklemiyor.
+</video>
+<p class="video-note"><span>🔊 Ses açık olsun</span> • <span>▶️ Play tuşuna basın</span> • <span>⏸️ İstediğiniz yerde duraklatabilirsiniz</span></p>
+</div>
+</div>
+
+<div class="footer">
+<p style="font-size:1.1em">
+© Bu Rapor EFC Clinic için <strong>ErdinçE</strong> Tarafından 
+<a href="https://www.kariyer.net/is-ilani/efc-cerrahi-tip-merkezi-sosyal-medya-uzmani-4391008" target="_blank">Sosyal Medya Uzmanı İlanı</a> istinaden Hazırlanmıştır
+</p>
+</div>
+</div>
+
+<button class="btn" onclick="dl()">📥 HTML İndir</button>
+
+<script>
+function dl(){const h=document.documentElement.outerHTML;const b=new Blob([h],{type:'text/html'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='EFC_Clinic_Strateji_Raporu.html';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(u);alert('✅ Dosya indirildi!\n\nPDF için: Ctrl+P → "PDF olarak kaydet"');}
+</script>
+</body>
+</html>
